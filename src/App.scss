@@ -82,3 +82,26 @@ table, th, td {
 th, td {
     padding: 0.5rem;
 }
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid $addition-color;
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: white;
+    color: $addition-color;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    color: $addition-color;
+}
+
+blockquote p {
+    display: inline;
+}
