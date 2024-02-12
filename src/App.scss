@@ -54,9 +54,31 @@ body {
     }
 
     &__content {
-        background-color: white;
+        background-color: $secondary-color;
         padding: 1rem;
         min-width: 80vw;
         min-height: 10rem;
     }
+
+    & img {
+        max-width: 100%;
+    }
+}
+
+code, pre {
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid $primary-color;
+}
+
+th, td {
+    padding: 0.5rem;
 }
