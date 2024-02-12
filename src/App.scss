@@ -1,6 +1,6 @@
-$primary-color: #12130F;
-$secondary-color: #E8E9F3;
-$cta-color: #F03A47;
+$primary-color: #383F51;
+$secondary-color: #DDDBF1;
+$addition-color: #3C4F76;
 
 * {
     box-sizing: border-box;
@@ -10,7 +10,53 @@ body {
     background-color: $primary-color;
     color: $secondary-color;
     min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.editor {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    color: $primary-color;
+    max-width: calc(100vw - 4rem);
+    margin: 0 auto 2rem;
+
+    &__header {
+        max-width: 100%;
+        background-color: $secondary-color;
+        border-radius: 0.2rem;
+        outline: 1px solid $addition-color;
+        margin: 0;
+        padding: 0.3rem 1rem;
+    }
+
+    &__textarea {
+        min-width: 100%;
+        min-height: 10rem;
+        max-width: 100%;
+        padding: 1rem;
+    }
+}
+
+.preview {
+    color: $primary-color;
+    max-width: calc(100vw - 4rem);
+    margin: 0 auto;
+
+    &__header {
+        background-color: $secondary-color;
+        outline: 1px solid $addition-color;
+        border-radius: 0.2rem;
+        margin: 0;
+        padding: 0.3rem 1rem;
+    }
+
+    &__content {
+        background-color: white;
+        padding: 1rem;
+        min-width: 80vw;
+        min-height: 10rem;
+    }
 }
