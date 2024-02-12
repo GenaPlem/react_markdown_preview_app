@@ -2,9 +2,11 @@ import './App.scss';
 import {Editor} from "./components/Editor";
 import {Preview} from "./components/Preview";
 import {useState} from "react";
+import {marked} from "marked";
+
 
 function App() {
-    const [markdown, setMarkdown] = useState('Init')
+    const [markdown, setMarkdown] = useState('')
 
     const setMarkdownText = (value) => {
         setMarkdown(value)
